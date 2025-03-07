@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/p_main1.css') }}">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+        <a href="" class="logo">Selva</a>
+            
+        <div class='bx bx-menu' id="menu-icon"></div>
+            
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        </header>
+
+        <section id= "Home" class="home">
+    <div class="home-content">
+        <h1>Hi, I'm Selvalakshmi </h1>
+        <p>Currently pursuing Bachelors in Electronics and Communication Engineering at Dr.N.G.P Institute of Technology.</p>
+        <div class="btn">
+            <a href="" class="box">Download CV</a>
+        </div>
+    </div>
+
+    <div class="home-sci">
+        <a href=""><i class='bx bxl-linkedin'></i></a>
+        <a href=""><i class='bx bxl-github'></i></a>
+        <a href=""><i class='bx bxl-whatsapp'></i></a>
+    </div>
+</section>
+
+        
+         <section id="Skills" class="skills">
+            <h2 class="heading" >My <span>Skills</span></h2>
+                
+                <div class="skills-list">
+                    <div class="skill-box">
+                        <i class='bx bxl-python' style='color:#46d5f7'  ></i>
+                        <h2 class="titles">Python</h2>
+                        <p class="detail">Python is a high level,interpreted programming language which is known for code readability and simplicity. </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxs-data' style='color:#46d5f7'></i>
+                        <h2 class="titles">SQL</h2>
+                        <p class="detail">Sql is standard programming language for maintaining and managing relational databases</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-html5' style='color:#46d5f7'></i>
+                        <h2 class="titles">HTML</h2>
+                        <p class="detail">HTML stands for Hypertext Markup Language which provides the structure for web page</p>
+                    </div>
+                </div>
+                
+             <div class="skills-list">
+                    <div class="skill-box">
+                        <i class='bx bxl-flask' style='color:#46d5f7'></i>
+                        <h2 class="titles">Flask</h2>
+                        <p class="detail">Flask is a lightweight and flexible framework for web development and web applications that utilizes the Python programming language.</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-git' style='color:#46d5f7'></i>
+                        <h2 class="titles">Git</h2>
+                        <p class="detail">Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development. </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-css3' style="color:#46d5f7"></i>
+                        <h2 class="titles">CSS</h2>
+                        <p class="detail">Sql is standard programming language for maintaining and managing relational databases</p>
+                    </div>
+                </div>
+        </section>
+        
+        
+        <section id="Projects" class="projects">
+            <h2 class="heading" >My<span> Projects</span></h2>
+            
+            <div class="projects-list">
+                <div class="projects-box">
+                    <h3>Event registration System(ongoing)</h3>
+                    <p>The Event Registration System allows users to seamlessly browse, register, and pay for upcoming events. 
+                        It integrates a secure online payment gateway and automatically sends confirmation emails containing a unique ticket or secret code to users once their payment is success.
+                        The backend efficiently manages user data, event details, and payments, while the front-end provides an intuitive interface for users to easily register for events.</p>
+                </div>
+                <div class="projects-box">
+                    <h3>Productivity Tracker website</h3>
+                    <p>The website is designed to give quick insights about software usage with an easy-to-navigate interface. 
+                        It provides a detailed and interactive visualization of your software usage to show exactly how much time the user is spending on productive vs. unproductive tasks.
+                        It displays daily productivity percentages through interactive, real-time graphs. It also contains interactive calendar which highlights productive and unproductive days through color-codes for easy reference.
+                        The visual breakdown of activities helps the user to optimize your day for better productivity as well as reducing time wasted on non-essential tasks.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="Contact"  class="contact">
+            <h2 class="heading" >Contact <span>Me!</span></h2>
+            
+            <form action="/submit" method="POST">
+                <div class="container1">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full name" name="full_name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email id" name="email_id" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="number" placeholder="Mobile number" name="mobile_no" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email subject" name="email_subject" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                
+                <div class="textarea-field">
+                    <textarea  cols="30" rows="5S" placeholder="your message" name="message" required></textarea>
+                    <span class="focus"></span>
+                </div>
+                
+                <div class="btn">
+                    <button type="submit" class="box">submit</button>
+                </div>
+                </div>
+                
+            </form>  
+        </section>
+        
+        <div class="footer">
+            
+    <div class="footer-bottom">
+        <p>&copy; 2025 Selvalakshmi. All Rights Reserved.</p>
+        
+    </div>
+</div>
+        <script>
+                // Smooth scroll effect
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            </script>
+
+    </body>
+</html>

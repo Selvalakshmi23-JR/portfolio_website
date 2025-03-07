@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Success/Failure</title>
+    <style>
+        body {
+            background-color: #051b29;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .center {
+            margin-top: 20%; 
+            text-align: center;   
+            color: white;         
+            font-size: 1rem;       
+            padding: 20px;        
+        }
+
+        @media (max-width: 600px) {
+            .center {
+                margin-top: 10%; 
+                font-size: 1.5em;
+            }
+        }
+
+    
+        @media (max-width: 400px) {
+            .center {
+                font-size: 1.2em; 
+                margin-top: 15%;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <p>{{ msg }}</p>
+        <p>Thank you for reaching out to me. I truly appreciate your interest in connecting, and I’m excited about the possibility of collaborating together.</p>
+    </div>
+</body>
+</html>
